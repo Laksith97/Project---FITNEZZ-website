@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Member  |  FITNEZZ</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link rel="stylesheet" type="text/css" href="footer-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo clone">Fit<span>nezz</span> </a>
+
+        <div class="icons">
+            <a href="login.html" class="btn">Already have an account?</a>
+        </div>
+
+    </header>
+
+    <section class="content">
+
+        <section class="register">
+
+            <div class="form-container">
+    
+                <form action="register.php" method="POST">
+    
+                    <div class="row">
+    
+                        <h4>Account</h4>
+    
+                        <div class="input-group input-group-icon">
+                            <input type="text" name="flname" placeholder="Full Name" required/>
+                            <div class="input-icon"><i class="fa fa-user"></i></div>
+                        </div>
+    
+                        <div class="input-group input-group-icon">
+                            <input type="email" name="email" placeholder="Email Address" required/>
+                            <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                        </div>
+    
+                        <div class="input-group input-group-icon">
+                            <input type="password" name="pw" placeholder="Password" required/>
+                            <div class="input-icon"><i class="fa fa-key"></i></div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+    
+                        <div class="col-half">
+    
+                            <h4>Date of Birth</h4>
+    
+                            <div class="input-group">
+    
+                                <div class="col-third">
+                                    <input type="text" name="date" placeholder="DD"/>
+                                </div>
+    
+                                <div class="col-third">
+                                    <input type="text" name="month" placeholder="MM"/>
+                                </div>
+    
+                                <div class="col-third">
+                                    <input type="text" name="year" placeholder="YYYY"/>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-half">
+    
+                            <h4>Gender</h4>
+    
+                            <div class="input-group">
+    
+                                <input id="gender-male" type="radio" name="gender" value="Male"/>
+                                <label for="gender-male">Male</label>
+    
+                                <input id="gender-female" type="radio" name="gender" value="Female"/>
+                                <label for="gender-female">Female</label>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+    
+                        <h4>Terms and Conditions</h4>
+    
+                        <div class="input-group">
+                            <input id="terms" type="checkbox" required/>
+                            <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+    
+                        <input type="submit" value="Register" id="reg-btn"/>
+    
+                    </div>
+    
+                </form>
+    
+            </div>
+            
+        </section>
+
+    </section>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <a href="index.html" class="logo">Fit<span>nezz</span> </a>
+
+            <p class="footer-company-name">FITNEZZ © 2022</p>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>No. 24, Galle Road,</span> Matara, Sri Lanka</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(+94) 41 22 59 640</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:laksithrathnayake456@gmail.com">support@Fitnezz.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <span class="sub-topic">Find Us</span>
+            
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://lk.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
