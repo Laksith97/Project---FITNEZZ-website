@@ -1,0 +1,224 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mem-content {
+    background-image: url("images/member-back.jpg");
+    background-color: #514c60;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+}
+
+
+/* ---------- Member Table starts here ---------- */
+
+.cont {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-container {
+    width: 60%;
+    margin-top: 4rem;
+}
+
+.table-container h3 {
+    display: block;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    color: #fafafa;   
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+}
+ 
+#welcome {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 3rem auto;
+    color: #F8F8F8;
+    text-align: left;
+    opacity: 0.8;
+}
+
+#welcome span {
+    font-size: 32px;
+    color: aqua;
+}
+
+h3 {
+    background: #305c83;
+    opacity: 0.8;
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.member-table {
+    background:#F8F8F8;
+    opacity: 0.9;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: 3rem auto;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+
+.member-table tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.member-table tr:hover td {
+    background: #4E5066;
+    color: #FFFFFF;
+    border-top: 1px solid #22262e;
+    border-bottom: 1px solid #C1C3D1;
+}
+
+.member-table tr:hover th {
+    background: #3e4051;
+    color: #FFFFFF;
+    border-top: 1px solid #22262e;
+}
+
+.member-table tr:first-child {
+    border-top: none;
+}
+  
+.member-table tr:last-child {
+    border-bottom: none;
+}
+
+.member-table td {
+    background: #303A43;
+    color: aqua;
+    padding: 20px 30px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 18px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+    text-transform: none;
+}
+
+.member-table td .caps {
+    text-transform: capitalize;
+}
+
+.member-table th {
+    text-align: left;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+
+/* ---------- Member Schedule starts here ---------- */
+
+.schedule {
+    min-height: 80vh;
+    background: #666B85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+}
+
+.schedule .list {
+    flex: 1 1 40rem;
+    padding: 3rem;
+}
+
+.schedule .list img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.schedule .info {
+    flex: 1 1 50rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.schedule .info h2 {
+    font-size: 3.5rem;
+    color: yellowgreen;
+    margin-bottom: 3rem;
+    text-transform: none;
+}
+
+.schedule .info p {
+    line-height: 1.8;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    text-transform: none;
+    color: #F8F8F8;
+}
+
+
+/* ---------- Media queries for Member ---------- */
+
+@media only screen and (max-width: 880px) {
+
+	.cont #welcome,
+	.cont .table-container {
+		display: flexbox;
+		width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+	}
+
+    #welcome h2 {
+        font-size: 45px;
+    }
+
+    #welcome span {
+        font-size: 30px;
+        color: wheat;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+	.cont #welcome, .table-container {
+		display: flexbox;
+		width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+	}
+
+}
